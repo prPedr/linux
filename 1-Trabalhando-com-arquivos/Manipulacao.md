@@ -1,4 +1,4 @@
-# 📄 Manipulação de Arquivos e Diretórios (`touch`, `mkdir`)
+# Manipulação de Arquivos e Diretórios (`touch`, `mkdir`)
 
 Comandos voltados para a criação, alteração e gerenciamento de arquivos e pastas no sistema.
 

@@ -1,4 +1,4 @@
-# 🧭 Navegação de Diretórios (`cd`, `pwd`)
+# Navegação de Diretórios (`cd`, `pwd`)
 
 Comandos utilizados para se localizar e navegar entre as pastas do sistema de arquivos do Linux.
 

@@ -1,4 +1,4 @@
-# 📂 Listagem, Filtros e Busca (`ls`, `find`)
+# Listagem, Filtros e Busca (`ls`, `find`)
 
 Comandos para exibir o conteúdo de pastas, filtrar resultados e pesquisar arquivos pelo sistema.
 
