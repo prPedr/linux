@@ -1,8 +1,14 @@
-# Navegação de Diretórios (`cd`)
+# 🧭 Navegação de Diretórios (`cd`, `pwd`)
 
-O comando `cd` (*Change Directory*) é utilizado para navegar entre as pastas do sistema de arquivos do Linux.
+Comandos utilizados para se localizar e navegar entre as pastas do sistema de arquivos do Linux.
 
 ## Comandos
+
+### `pwd`
+Exibe o caminho absoluto completo do diretório atual onde você se encontra (*Print Working Directory*).
+```bash
+pwd
+```
 
 ### `cd ..`
 Volta um nível na hierarquia de diretórios (vai para o diretório pai).

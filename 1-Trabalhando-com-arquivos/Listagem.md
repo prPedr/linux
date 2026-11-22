@@ -1,8 +1,8 @@
-# Listagem e Filtros (`ls`)
+# 📂 Listagem, Filtros e Busca (`ls`, `find`)
 
-O comando `ls` (*List*) exibe o conteúdo (arquivos e subdiretórios) de uma pasta. Ele pode ser combinado com caminhos, caracteres curinga (*wildcards*) e paginadores.
+Comandos para exibir o conteúdo de pastas, filtrar resultados e pesquisar arquivos pelo sistema.
 
-## Listagem Básica
+## Listagem Básica (`ls`)
 
 ### `ls`
 Lista os arquivos e pastas visíveis no diretório atual em que você se encontra.
@@ -54,4 +54,21 @@ Lista arquivos que correspondam a **valores específicos** listados dentro dos c
 > **Nota:** Em *globbing* padrão do Bash, os colchetes leem caracteres individuais (então `[1,3,5]` também tentaria buscar `arquivo,.txt`). Para listas exatas de palavras ou números sem a vírgula ser interpretada como caractere, o ideal no Bash moderno é usar chaves: `ls arquivo{1,3,5}.txt`.
 ```bash
 ls arquivo[1,3,5].txt
+```
+
+---
+
+## Busca de Arquivos (`find`)
+
+### `find -name arq*`
+Busca recursivamente (a partir do diretório atual e em todas as subpastas) por arquivos ou diretórios cujo nome comece com `arq`.
+```bash
+find -name arq*
+```
+
+### `find / -name passwd*` (ou `find -name passwd*` na raiz `/`)
+Busca em todo o sistema (partindo do diretório raiz `/`) por arquivos que comecem com `passwd`.
+> **Importante (`Permission denied`):** Ao rodar essa busca na raiz como usuário comum, o terminal exibirá várias mensagens de `Permission denied` em diretórios restritos do sistema (como `/root` ou `/proc`). Para varrer todos os diretórios sem restrições, é necessário executar o comando com privilégios de administrador usando `sudo`:
+```bash
+sudo find / -name passwd*
 ```
