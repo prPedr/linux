@@ -1,8 +1,8 @@
-# Listagem, Filtros e Busca (`ls`, `find`)
+# 📂 Listagem, Filtros e Busca (`ls`, `find`)
 
 Comandos para exibir o conteúdo de pastas, filtrar resultados e pesquisar arquivos pelo sistema.
 
-## Listagem Básica (`ls`)
+## Listagem Básica e Detalhada (`ls`)
 
 ### `ls`
 Lista os arquivos e pastas visíveis no diretório atual em que você se encontra.
@@ -14,6 +14,24 @@ ls
 Lista o conteúdo do diretório `/sys/kernel` sem a necessidade de entrar nele antes.
 ```bash
 ls /sys/kernel
+```
+
+### `ls -l`
+Exibe a listagem em **formato longo** (*long listing*). Mostra detalhes importantes como permissões, número de links, dono, grupo, tamanho (em bytes), data/hora de modificação e nome.
+```bash
+ls -l
+```
+
+### `ls -lh`
+Combina o formato longo (`-l`) com a opção legível para humanos (`-h` / *human-readable*), convertendo o tamanho dos arquivos de bytes para **KB, MB, GB**, etc.
+```bash
+ls -lh
+```
+
+### `ls -lah`
+Adiciona a opção `-a` (*all*) ao `ls -lh`, exibindo também os **arquivos e diretórios ocultos** (aqueles que começam com um ponto `.`, como `.bashrc` ou `.git`).
+```bash
+ls -lah
 ```
 
 ---
