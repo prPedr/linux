@@ -1,4 +1,4 @@
-# 📖 Ajuda e Manuais do Sistema (`--help`, `man`)
+# Ajuda e Manuais do Sistema (`--help`, `man`)
 
 Comandos essenciais para consultar a documentação oficial, parâmetros disponíveis e exemplos de uso diretamente no terminal, sem precisar sair da linha de comando.
 

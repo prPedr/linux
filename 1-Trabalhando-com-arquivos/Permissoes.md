@@ -1,4 +1,4 @@
-# 👥 Usuários, Grupos e Privilégios (`passwd`, `su`)
+# Usuários, Grupos e Privilégios (`passwd`, `su`)
 
 Comandos voltados para a visualização de grupos do sistema, gerenciamento de senhas e troca de sessão de usuário no terminal (testados em distribuição **Ubuntu**).
 
